@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="index.xhtml" x="175" y="299" zoom="true"/>
+        <Node id="portal/BlogDetailList.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="admin/AdminBlogDetail.xhtml" x="401" y="121" zoom="false"/>
+        <Node id="admin/AdminBlogView.xhtml" x="420" y="293" zoom="true"/>
+        <Node id="admin/AdminBloglList.xhtml" x="471" y="230" zoom="true"/>
+        <Node id="portal/BlogDetailView.xhtml" x="90" y="135" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>

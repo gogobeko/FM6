@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="./../resources/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="./../resources/css/cssLayout.css" rel="stylesheet" type="text/css" />
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+
+
+        <div id="top" class="top">
+            <ui:insert name="top">ÖMÜR ALÇİN - JEE BLOG </ui:insert>
+        </div>
+        <div>
+            <div id="left">
+                <ui:insert name="left">Left
+                    
+             <h:form>
+                    <h:dataTable value="#{blogListBean.blogList}" var="blog" border="1"> 
+                        <h:column>
+                            <f:facet name="header">MAKALE ADI</f:facet>
+                            <h:outputLink value="FaceletBlogClient.xhtml">
+                                <f:param name="blogId" value="#{blog.blogId}"/>
+                                <h:outputText value="#{blog.blogName}"/> 
+                            </h:outputLink> 
+                            </h:column>
+                    </h:dataTable> 
+                        <h:commandButton value="Admin Paneli" action="GO_ADMİN"/>
+             </h:form>
+                </ui:insert>
+            </div>
+            <div id="content" class="left_content">
+                <ui:insert name="content">Bloğuma Hoşgeldiniz.
+                    <div id="gogo_img">
+                         <img src="/FM6/resources/gogo.jpeg" alt="welcome" width="110" height="120"/>
+                    </div>
+                </ui:insert>
+            </div>
+        </div>
+    </h:body>
+
+</html>

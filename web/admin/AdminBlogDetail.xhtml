@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+         <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Makale ID"/>
+                <h:outputText value="#{blogDetailBean.blog.blogId}"/>
+                <h:outputLabel value="Makale ADI"/>
+                <h:inputText value="#{blogDetailBean.blog.blogName}"/>
+                <h:outputLabel value="Makale Gövdesi"/>
+                <h:inputTextarea value="#{blogDetailBean.blog.blogBody}"/>
+                <h:commandButton value ="KAYDET" action="#{blogDetailBean.save()}"/>
+                <h:commandButton value ="MERGE" action="#{blogDetailBean.merge()}"/>
+                <h:commandButton value ="Listele" action="GO_LIST"/>
+                
+                
+            </h:panelGrid>
+         </h:form>
+    </h:body>
+</html>
+

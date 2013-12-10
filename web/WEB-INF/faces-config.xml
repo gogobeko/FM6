@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!-- =========== FULL CONFIGURATION FILE ================================== -->
+
+<faces-config version="2.0"
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd">
+    <navigation-rule>
+        <from-view-id>/admin/AdminBlogDetail.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>GO_LIST</from-outcome>
+            <to-view-id>/admin/AdminBlogList.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/admin/AdminBlogList.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>deleted</from-outcome>
+            <to-view-id>/admin/AdminBlogDetail.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/portal/PanelBlogList.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>GO_ADMİN</from-outcome>
+            <to-view-id>/admin/AdminBlogDetail.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/portal/PanelBlogView.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>GO_LIST</from-outcome>
+            <to-view-id>/portal/PanelBlogList.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/portal/FaceletBlog.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>GO_ADMİN</from-outcome>
+            <to-view-id>/admin/AdminBlogDetail.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>case1</from-outcome>
+            <to-view-id>/portal/FaceletBlog.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/portal/FaceletBlogClient.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>GO_ADMİN</from-outcome>
+            <to-view-id>/admin/AdminBlogDetail.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>
